@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dylanjlee1-recallgap"
+version = "0.1.0"
+description = "把问题拆成需要回答的子点，标出检索结果完全没覆盖到的子点"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "dylanjlee1" }]
+keywords = ["llm", "cli", "analysis", "observability"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://dylanjlee1.github.io"
+Repository = "https://github.com/dylanjlee1/recallgap"
+Issues = "https://github.com/dylanjlee1/recallgap/issues"
+
+[project.scripts]
+recallgap = "recallgap:main"
+
+[tool.setuptools]
+py-modules = ["recallgap"]
